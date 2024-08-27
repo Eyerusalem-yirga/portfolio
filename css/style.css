@@ -503,7 +503,7 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-  background: url("../img/header-bg.png") right bottom no-repeat;
+  /* background: url("../img/header-bg.png") right bottom no-repeat; */
   background-size: contain;
   padding: 110px 0 100px 0;
   height: auto;
@@ -1311,5 +1311,51 @@ ul.slides li {
 
   .subscribe {
     padding-bottom: 40px;
+  }
+}
+/* Responsive Heading Styles */
+h1 {
+  font-size: 6vw; /* Relative to the viewport width */
+  color: #353535;
+  margin: 0.5em 0;
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: center;
+}
+
+h1 span {
+  display: inline; /* Ensure spans are inline, not block */
+  font-size: inherit; /* Inherit the responsive font size */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+/* Subheading styles */
+h3 {
+  font-size: 4vw;
+  margin: 0.5em 0;
+  text-align: center;
+  color: #353535;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 8vw;
   }
 }
